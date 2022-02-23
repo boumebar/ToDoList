@@ -84,9 +84,6 @@
     "egulias/email-validator": {
         "version": "3.1.2"
     },
-    "fzaninotto/faker": {
-        "version": "v1.9.2"
-    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
@@ -128,6 +125,18 @@
     },
     "swiftmailer/swiftmailer": {
         "version": "v6.3.0"
+    },
+    "symfony/apache-pack": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "9d254a22efca7264203eea98b866f16f944b2f09"
+        },
+        "files": [
+            "./public/.htaccess"
+        ]
     },
     "symfony/asset": {
         "version": "v4.4.37"
@@ -457,6 +466,9 @@
     },
     "symfony/yaml": {
         "version": "v4.4.37"
+    },
+    "twig/extra-bundle": {
+        "version": "v3.3.8"
     },
     "twig/twig": {
         "version": "v3.3.8"

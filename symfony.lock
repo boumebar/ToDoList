@@ -87,12 +87,6 @@
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
-    "knplabs/knp-markdown-bundle": {
-        "version": "1.9.0"
-    },
-    "michelf/php-markdown": {
-        "version": "1.9.1"
-    },
     "monolog/monolog": {
         "version": "1.26.1"
     },
@@ -122,9 +116,6 @@
         "files": [
             "./config/packages/sensio_framework_extra.yaml"
         ]
-    },
-    "swiftmailer/swiftmailer": {
-        "version": "v6.3.0"
     },
     "symfony/apache-pack": {
         "version": "1.0",
@@ -244,8 +235,17 @@
     "symfony/intl": {
         "version": "v4.4.37"
     },
-    "symfony/lts": {
-        "version": "4-dev"
+    "symfony/mailer": {
+        "version": "4.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.3",
+            "ref": "bbfc7e27257d3a3f12a6fb0a42540a42d9623a37"
+        },
+        "files": [
+            "./config/packages/mailer.yaml"
+        ]
     },
     "symfony/maker-bundle": {
         "version": "1.37",
@@ -298,9 +298,6 @@
     "symfony/polyfill-ctype": {
         "version": "v1.24.0"
     },
-    "symfony/polyfill-iconv": {
-        "version": "v1.24.0"
-    },
     "symfony/polyfill-intl-icu": {
         "version": "v1.24.0"
     },
@@ -324,9 +321,6 @@
     },
     "symfony/polyfill-php81": {
         "version": "v1.24.0"
-    },
-    "symfony/process": {
-        "version": "v4.4.37"
     },
     "symfony/property-access": {
         "version": "v4.4.37"
@@ -374,20 +368,6 @@
     },
     "symfony/stopwatch": {
         "version": "v4.4.37"
-    },
-    "symfony/swiftmailer-bundle": {
-        "version": "3.5",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "2.5",
-            "ref": "f0b2fccdca2dfd97dc2fd5ad216d5e27c4f895ac"
-        },
-        "files": [
-            "./config/packages/dev/swiftmailer.yaml",
-            "./config/packages/swiftmailer.yaml",
-            "./config/packages/test/swiftmailer.yaml"
-        ]
     },
     "symfony/translation": {
         "version": "4.4",
@@ -455,20 +435,11 @@
             "./config/routes/dev/web_profiler.yaml"
         ]
     },
-    "symfony/web-server-bundle": {
-        "version": "4.4",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "3.3",
-            "ref": "dae9b39fd6717970be7601101ce5aa960bf53d9a"
-        }
-    },
     "symfony/yaml": {
         "version": "v4.4.37"
     },
     "twig/extra-bundle": {
-        "version": "v3.3.8"
+        "version": "v3.3.3"
     },
     "twig/twig": {
         "version": "v3.3.8"

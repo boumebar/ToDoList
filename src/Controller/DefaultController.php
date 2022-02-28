@@ -10,7 +10,7 @@ class DefaultController extends AbstractController
     /**
      * @Route("/", name="homepage")
      */
-    public function indexAction()
+    public function indexAction($mailerDsn)
     {
         return $this->render('default/index.html.twig');
     }

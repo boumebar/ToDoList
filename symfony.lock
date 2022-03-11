@@ -1,4 +1,13 @@
 {
+    "clue/stdio-react": {
+        "version": "v2.5.0"
+    },
+    "clue/term-react": {
+        "version": "v1.3.0"
+    },
+    "clue/utf8-react": {
+        "version": "v1.2.0"
+    },
     "composer/package-versions-deprecated": {
         "version": "1.11.99.5"
     },
@@ -23,6 +32,9 @@
     "doctrine/common": {
         "version": "3.2.2"
     },
+    "doctrine/data-fixtures": {
+        "version": "1.5.2"
+    },
     "doctrine/dbal": {
         "version": "2.13.7"
     },
@@ -41,6 +53,18 @@
             "./config/packages/doctrine.yaml",
             "./src/Entity/.gitignore",
             "./src/Repository/.gitignore"
+        ]
+    },
+    "doctrine/doctrine-fixtures-bundle": {
+        "version": "3.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "1f5514cfa15b947298df4d771e694e578d4c204d"
+        },
+        "files": [
+            "./src/DataFixtures/AppFixtures.php"
         ]
     },
     "doctrine/doctrine-migrations-bundle": {
@@ -83,8 +107,14 @@
     "egulias/email-validator": {
         "version": "3.1.2"
     },
+    "evenement/evenement": {
+        "version": "v3.0.1"
+    },
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.6"
+    },
+    "jolicode/jolinotif": {
+        "version": "v2.3.0"
     },
     "laminas/laminas-code": {
         "version": "3.4.1"
@@ -123,7 +153,7 @@
         "version": "v1.15.0"
     },
     "phpunit/php-code-coverage": {
-        "version": "9.2.14"
+        "version": "9.2.15"
     },
     "phpunit/php-file-iterator": {
         "version": "3.0.6"
@@ -162,6 +192,12 @@
     },
     "psr/log": {
         "version": "1.1.4"
+    },
+    "react/event-loop": {
+        "version": "v1.2.0"
+    },
+    "react/stream": {
+        "version": "v1.2.0"
     },
     "sebastian/cli-parser": {
         "version": "1.0.1"
@@ -223,6 +259,9 @@
             "./config/packages/sensio_framework_extra.yaml"
         ]
     },
+    "spatie/phpunit-watcher": {
+        "version": "1.23.6"
+    },
     "symfony/apache-pack": {
         "version": "1.0",
         "recipe": {
@@ -237,6 +276,9 @@
     },
     "symfony/asset": {
         "version": "v5.4.0"
+    },
+    "symfony/browser-kit": {
+        "version": "v5.4.3"
     },
     "symfony/cache": {
         "version": "v5.4.5"
@@ -267,6 +309,9 @@
     },
     "symfony/doctrine-bridge": {
         "version": "v5.4.5"
+    },
+    "symfony/dom-crawler": {
+        "version": "v5.4.6"
     },
     "symfony/dotenv": {
         "version": "v5.4.5"
@@ -419,6 +464,9 @@
     "symfony/polyfill-php81": {
         "version": "v1.24.0"
     },
+    "symfony/process": {
+        "version": "v5.4.5"
+    },
     "symfony/property-access": {
         "version": "v5.4.5"
     },
@@ -551,5 +599,8 @@
     },
     "webmozart/assert": {
         "version": "1.10.0"
+    },
+    "yosymfony/resource-watcher": {
+        "version": "v3.0.0"
     }
 }

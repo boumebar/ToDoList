@@ -1,7 +1,5 @@
-controllers:
-    resource: '../src/Controller/'
-    type:     annotation
-homepage:
-    path: /
-    defaults:
-        _controller: App\Controller\DefaultController::indexAction
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+api_login_check:
+    path: /api/login_check

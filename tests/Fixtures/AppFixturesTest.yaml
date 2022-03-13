@@ -1,0 +1,25 @@
+App\Entity\User:
+  user-admin:
+    username: admin
+    email: admin@admin.com
+    password: "password"
+    roles: ["ROLE_ADMIN"]
+  user-{1..5}:
+    username: user<current()>
+    email: user<current()>\@user<current()>.com
+    password: "password"
+    roles: ["ROLE_USER"]
+  
+App\Entity\Task:
+  task-anonyme:
+    title: "tache anonyme"
+    content: "Le contenu anonyme"
+    author: "null"
+  task-{1..6}:
+    title: "tâche <current()>"
+    content: "Le contenu de la tâche <current()>"
+    author: "@user-<numberBetween(1,5)>"
+  task-admin:
+    title: "Ma tâche d'admin"
+    content: "Le contenu de ma tâche d'admin"
+    author: "@user-admin"

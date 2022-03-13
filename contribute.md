@@ -31,14 +31,15 @@ Quelques liens :
 $ ./vendor/bin/phpunit
 ```
 
-### 4. Rappels sur les STANDARDS
+- Mettez a jour votre taux de coverage a l'aide de cette commande :
 
-- <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md" target="_blank">PSR-1: Basic Coding Standard</a>
-- <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md" target="_blank">PSR-2: Coding Style Guide</a>
-- <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md" target="_blank">PSR-4: Autoloading Standard</a>
-- <a href="https://symfony.com/doc/4.4/contributing/code/standards.html" target="_blank">Symfony Coding Standards</a>
-- <a href="https://twig.symfony.com/doc/2.x/coding_standards.html" target="_blank">Twig Coding Standards</a>
-- <a href="https://www.doctrine-project.org/projects/doctrine-coding-standard/en/8.2/index.html" target="_blank">Doctrine Coding Standards</a>
+```
+$ ./vendor/bin/phpunit --coverage-html web/code-coverage
+```
+
+### 5. Soumetter votre code
+
+- Créer une Pull Request en consultant la documentation officielle => [la documentation GitHub](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
 ### 5. Rappels sur les bonnes pratiques Symfony
 

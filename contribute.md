@@ -8,7 +8,7 @@ Bienvenue dans ce guide du développeur qui vous permettra de contribuer aux év
 
 ### 2. Créer une branche
 
-- Créez une nouvelle branche sous Gitavec la commande :
+- Créez une nouvelle branche sous Git avec la commande :
 
 ```
 git checkout -b new-branch
@@ -16,7 +16,7 @@ git checkout -b new-branch
 
 ### 3. Coder
 
-Coder vos nouvelles fonvctionnalités ou vos ameliorations aux projet.
+Coder vos nouvelles fonctionnalités ou vos ameliorations aux projet.
 N'oubliez pas de respecter les standard de Php et de symfony.
 Quelques liens :
 

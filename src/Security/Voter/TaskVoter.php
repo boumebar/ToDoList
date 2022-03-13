@@ -26,10 +26,9 @@ class TaskVoter extends Voter
         $user = $token->getUser();
         // if the user is anonymous, do not grant access
         if (!$user instanceof UserInterface) {
+            dd('jesuisla');
             return false;
         }
-
-        if ($task->getAuthor()  === null) return false;
 
         // ... (check conditions and return true to grant permission) ...
         switch ($attribute) {
@@ -56,7 +55,6 @@ class TaskVoter extends Voter
 
     private function canDelete(Task $task, User $user): bool
     {
-        // this assumes that the Post object has a `getOwner()` method
-        return $user === $task->getAuthor();
+        return ($user === $task->getAuthor()) || ((in_array('ROLE_ADMIN', $user->getRoles()) && null === $task->getAuthor()));
     }
 }

@@ -4,10 +4,10 @@ namespace App\Controller;
 
 use App\Entity\Task;
 use App\Form\TaskType;
-use Doctrine\ORM\EntityManagerInterface;
 use App\Repository\TaskRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class TaskController extends AbstractController
@@ -43,7 +43,6 @@ class TaskController extends AbstractController
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $task->setAuthor($this->getUser());
-            dd($task);
             $em->persist($task);
             $em->flush();
 

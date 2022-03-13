@@ -14,7 +14,7 @@ App\Entity\Task:
   task-anonyme:
     title: "tache anonyme"
     content: "Le contenu anonyme"
-    author: "@user-1"
+    author: "null"
   task-{1..6}:
     title: "tâche <current()>"
     content: "Le contenu de la tâche <current()>"
@@ -22,4 +22,4 @@ App\Entity\Task:
   task-admin:
     title: "Ma tâche d'admin"
     content: "Le contenu de ma tâche d'admin"
-    author: "@admin"
+    author: "@user-admin"

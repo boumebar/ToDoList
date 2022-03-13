@@ -22,7 +22,6 @@ class AppFixtures extends Fixture
     public function load(ObjectManager $manager): void
     {
         $admin = new User();
-        $taskAnonyme = new Task();
 
         $admin->setUsername("admin")
             ->setEmail("admin@admin.fr")
@@ -30,11 +29,16 @@ class AppFixtures extends Fixture
             ->setRoles(["ROLE_ADMIN"]);
         $manager->persist($admin);
 
-        $taskAnonyme->setAuthor(null)
-            ->setTitle('titre anonyme');
-        $taskAnonyme->setContent("contenu anonyme");
-        $manager->persist($taskAnonyme);
 
+
+        for ($k = 1; $k <= 10; $k++) {
+            $task = new Task();
+
+            $task->setAuthor(null)
+                ->setTitle("titre anonyme $k");
+            $task->setContent("contenu anonyme $k");
+            $manager->persist($task);
+        }
 
         for ($i = 1; $i <= 3; $i++) {
             $user = new User();

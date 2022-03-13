@@ -40,7 +40,4 @@ $ ./vendor/bin/phpunit --coverage-html web/code-coverage
 ### 5. Soumetter votre code
 
 - Créer une Pull Request en consultant la documentation officielle => [la documentation GitHub](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
-
-### 5. Rappels sur les bonnes pratiques Symfony
-
-- <a href="https://symfony.com/doc/4.4/best_practices.html" target="_blank">Symfony Best Practices</a>
+- ## Et Attendre que l'administrateur valide votre travail ;) .

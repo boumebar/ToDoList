@@ -20,8 +20,8 @@ git checkout -b new-branch
 - N'oubliez pas de respecter les standard de Php et de symfony.
   Quelques liens :
 
-- <a href="https://www.php-fig.org/psr/" target="_blank">PSR standard</a>
-- <a href="https://symfony.com/doc/5.4/contributing/code/standards.html" target="_blank">Symfony standard</a>
+  - <a href="https://www.php-fig.org/psr/" target="_blank">PSR standard</a>
+  - <a href="https://symfony.com/doc/5.4/contributing/code/standards.html" target="_blank">Symfony standard</a>
 
 ### 4. Tester votre code
 

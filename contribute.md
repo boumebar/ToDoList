@@ -25,10 +25,11 @@ Quelques liens :
 
 ### 4. Tester votre code
 
-- Créer une pull request à partir de votre branche
-- Attendre que l'intégration Continue via Travis éxécute les tests.
-- une fois les tests validés, effectuer un merge de votre code sur la branche principale.
-- Enfin, s'assurer via le badge CodeClimate présent dans le fichier [README.md](README.md) que vous obtenez bien toujours la note de A.
+- Tester votre code a l'aide de PHPUnit.
+
+```
+$ ./vendor/bin/phpunit
+```
 
 ### 4. Rappels sur les STANDARDS
 

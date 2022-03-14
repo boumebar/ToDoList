@@ -143,16 +143,15 @@ class TaskControllerTest extends WebTestCase
         $this->assertSelectorTextContains('.alert-success', "Superbe ! La tâche a bien été supprimée.");
     }
 
-    // public function testAdminDeleteAnonymousTask()
-    // {
-    //     $this->loginAdmin();
-    //     $task = static::getContainer()->get(TaskRepository::class)->findOneBy(['author' => null]);
-    //     $this->client->request('GET', '/tasks' . '/' . $task->getId() . '/delete');
-    //     $this->assertEquals(302, $this->client->getResponse()->getStatusCode());
+    public function testAdminDeleteAnonymousTask()
+    {
+        $this->loginAdmin();
+        $task = static::getContainer()->get(TaskRepository::class)->findOneBy(['author' => null]);
+        $this->client->request('GET', '/tasks' . '/' . $task->getId() . '/delete');
+        $this->assertEquals(302, $this->client->getResponse()->getStatusCode());
 
-    //     $this->client->followRedirect();
-    //     $this->assertEquals(200, $this->client->getResponse()->getStatusCode());
-    //     $this->assertSelectorTextContains('.alert-success', "Superbe ! La tâche a bien été supprimée.");
-    // }
-
+        $this->client->followRedirect();
+        $this->assertEquals(200, $this->client->getResponse()->getStatusCode());
+        $this->assertSelectorTextContains('.alert-success', "Superbe ! La tâche a bien été supprimée.");
+    }
 }
